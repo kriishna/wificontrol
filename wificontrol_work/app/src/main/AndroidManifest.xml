@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wificontrol.lichuang.com.wificontrol"
+    android:versionName="1.0"
+    android:versionCode="1">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name="wificontrol.lichuang.com.wificontrol.application.SysApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 室内控制 -->
+        <activity android:name=".activity.WIFIConnect"
+            android:launchMode="singleTask">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--插座管理-->
+        <activity
+            android:name=".activity.SocketManageMain"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/titlebarstyle"></activity>
+
+        <!-- 插座控制 -->
+        <activity
+            android:name=".activity.SocketControl"
+            android:theme="@style/titlebarstyle"></activity>
+        <!-- 选择连接设置 -->
+        <activity
+            android:name=".activity.SocketConnectSettingSelect"
+            android:theme="@style/titlebarstyle"></activity>
+        <!-- 选择连接设置 -->
+        <activity
+            android:name=".activity.SocketConnectSetting"
+            android:theme="@style/titlebarstyle"></activity>
+        <activity
+            android:name=".activity.SocketManageMainConnect"
+            android:theme="@style/titlebarstyle"
+            ></activity>
+        <activity android:name=".activity.WiFiSelectActivity"
+
+            ></activity>
+
+
+
+    </application>
+
+</manifest>

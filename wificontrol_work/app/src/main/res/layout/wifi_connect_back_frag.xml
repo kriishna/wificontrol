@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <TextView
+        android:id="@+id/wifi_connect_back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_connect_back_tv"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <!-- 密码输入框设置为页面的中心位置 -->
+
+    <Spinner
+        android:id="@+id/wifi_connect_back_wifi_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifi_connect_back_tv"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textSize="20sp"
+        android:spinnerMode="dropdown"
+
+        />
+
+
+    <EditText
+        android:id="@+id/wifi_connect_back_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifi_connect_back_wifi_sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_edit_text"
+        android:drawableLeft="@drawable/wifi_psw"
+        android:hint="@string/wifi_password_hint"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="20sp" />
+    <CheckBox
+        android:id="@+id/wifi_connect_back_dispwd_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifi_connect_back_password_et"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/display_pwd"/>
+    <!-- 密码输入框下 -->
+
+    <Button
+        android:id="@+id/wifi_connect_back_connect_btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/wifi_connect_back_dispwd_cb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/connect_btn_style"
+        android:text="@string/connect"
+        android:textSize="16sp" />
+    <!-- 密码输入框上  的wifi输入框 -->
+    <!--
+    <EditText
+        android:id="@+id/wifi_connect_wifi_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/wifi_connect_password_et"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_edit_text"
+        android:drawableLeft="@drawable/wifi_name"
+        android:hint="@string/wifi_name_hint"
+        android:singleLine="true"
+        android:textSize="20sp" />
+    -->
+
+
+
+    <!-- 输入WIFI框上的提醒信息 -->
+<!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/wifi_connect_back_wifi_sp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="32dp" >
+
+        <TextView
+            android:id="@+id/wifi_connect_back_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_connect_tv_1"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/wifi_connect_back_tv_2"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/wifi_connect_back_tv_1"
+            android:layout_marginTop="0dp"
+            android:background="@color/grey" />
+
+
+    </RelativeLayout>
+-->
+
+
+
+
+</RelativeLayout>

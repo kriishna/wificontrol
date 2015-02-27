@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--自定义标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <ImageButton
+            android:id="@+id/socket_manage_main_back_img"
+            android:layout_width="@dimen/title_image_btn_width"
+            android:layout_height="@dimen/title_image_btn_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/bg_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/socket_manage"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageButton
+            android:id="@+id/socket_manage_main_refresh_img"
+            android:layout_width="@dimen/title_image_btn_width"
+            android:layout_height="@dimen/title_image_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bg_refresh_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <ListView
+        android:id="@+id/socket_manage_main_socket_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout><!-- From: file:/E:/android_studio_project/WifiControl/app/src/main/res/layout/socket_manage_main.xml -->

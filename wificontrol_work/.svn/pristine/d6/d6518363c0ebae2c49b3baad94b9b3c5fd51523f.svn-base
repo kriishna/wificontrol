@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:background="@color/list_item_noselect"
+   >
+
+    <ImageView
+        android:id="@+id/socket_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/socket" />
+
+    <LinearLayout
+        android:id="@+id/socket_content_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/socket_img"
+        android:layout_marginLeft="18dp">
+        <TextView
+            android:id="@+id/socket_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+
+            android:text="插座一"
+            android:textSize="16sp"
+            android:ellipsize="marquee"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/socket_modbus"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+
+            android:layout_marginLeft="18dp"
+            android:text="01"
+            android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/socket_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="在线"
+        android:textSize="18sp" />
+
+</RelativeLayout>

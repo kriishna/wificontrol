@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#555555</color>
+    <color name="black">#000000</color>
+
+    <color name="list_item_noselect">#f2f4f7</color>
+    <color name="list_item_select">#617691</color>
+</resources>

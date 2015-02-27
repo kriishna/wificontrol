@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--自定义标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" >
+
+        <ImageButton
+            android:id="@+id/socket_control_back_img"
+            android:layout_width="@dimen/title_image_btn_width"
+            android:layout_height="@dimen/title_image_btn_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/bg_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/socket_control"
+            android:textSize="@dimen/title_text_size" />
+        <ImageButton
+            android:id="@+id/socket_control_setup_img"
+            android:layout_width="@dimen/title_image_btn_width"
+            android:layout_height="@dimen/title_image_btn_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/banshou" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        />
+    <!-- 插座名称 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/socket_control_mc_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_small" />
+
+        <TextView
+            android:id="@+id/socket_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/socket_control_mc_img"
+            android:text="@string/socket_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/socket_control_socket_name_tv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/socket_name_tv"
+            android:text="插座1"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/socket_control_socket_name_edit_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_edit_btn" />
+
+    </RelativeLayout>
+    <!-- 用电量 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/socket_control_ydl_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_small" />
+
+        <TextView
+            android:id="@+id/socket_control_ydl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/socket_control_ydl_img"
+            android:text="@string/ydl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/socket_control_ydl_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/socket_control_ydl_tv"
+            android:text="200KW"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 电流 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/socket_control_dl_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_small" />
+
+        <TextView
+            android:id="@+id/socket_control_dl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/socket_control_dl_img"
+            android:text="@string/socket_dl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/socket_control_dl_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/socket_control_dl_tv"
+            android:text="10A"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 电压 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/socket_control_dy_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_small" />
+
+        <TextView
+            android:id="@+id/socket_control_dy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/socket_control_dy_img"
+            android:text="@string/socket_dy"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/socket_control_dy_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/socket_control_dy_tv"
+            android:text="220V"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 瞬时功率 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/socket_control_xhzt_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_small" />
+
+        <TextView
+            android:id="@+id/socket_control_xhzt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/socket_control_xhzt_img"
+            android:text="@string/socket_ssgl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/socket_control_xhzt_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/socket_control_xhzt_tv"
+            android:text="100KW/h"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 锁定状态 -->
+
+    <RelativeLayout
+        android:id="@+id/socket_control_layout_sdzt_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/socket_control_sdzt_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_small" />
+
+        <TextView
+            android:id="@+id/socket_control_sdzt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/socket_control_sdzt_img"
+            android:text="@string/qzsd"
+            android:textSize="20sp" />
+        <!--
+        <wificontrol.lichuang.com.wificontrol.view.WiperSwitch
+            android:id="@+id/socket_control_qzsd_wiper_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/socket_control_sdzt_tv" />
+        -->
+        <TextView
+            android:id="@+id/socket_control_qzsd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/socket_control_sdzt_tv"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <wificontrol.lichuang.com.wificontrol.view.Switch
+        android:id="@+id/socket_control_socket_switch"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+</LinearLayout>

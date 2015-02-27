@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+    >
+    <RelativeLayout
+        android:id="@+id/wifi_connected_frag_wificontent_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/wifi_connected_frag_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_connected_tv"
+            android:textSize="19sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifi_connected_frag_wificontrol_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:gravity ="center_vertical">
+
+        <Button
+            android:id="@+id/wifi_connected_frag_continue_bt"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:text="继续"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/connect_btn_style"/>
+        <TextView
+            android:id="@+id/wifi_connected_frag_getanotherwifi_tv"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/wifi_getanother_tv"
+            android:textSize="18sp"
+            android:layout_below="@id/wifi_connected_frag_continue_bt"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+           />
+    </RelativeLayout>
+
+</LinearLayout>

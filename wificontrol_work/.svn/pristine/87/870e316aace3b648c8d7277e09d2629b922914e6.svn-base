@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--自定义标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" >
+
+        <ImageButton
+            android:id="@+id/socket_connectt_setting_back_img"
+            android:layout_width="@dimen/title_image_btn_width"
+            android:layout_height="@dimen/title_image_btn_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/bg_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/connect_setting"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!--热点名称-->
+        <LinearLayout
+            android:id="@+id/hotspot_name_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hotspot_name_tv"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/hotspot_name"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/socket_connect_setting_hotspot_name_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginRight="25dp"/>
+        </LinearLayout>
+        <!--热点密码-->
+        <LinearLayout
+            android:id="@+id/hotspot_psw_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotspot_name_rl"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hotspot_psw_tv"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/hotspot_psw"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/socket_connect_setting_hotspot_psw_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginRight="25dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+  <!--
+
+
+        <Button
+            android:id="@+id/sockect_connect_setting_hotspot_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotspot_psw_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/connect_btn_style"
+            android:gravity="center"
+            android:text="@string/save_hotspot_settings"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey" />
+
+  -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <!--服务器IP-->
+        <LinearLayout
+            android:id="@+id/server_ip_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/server_ip_tv"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/server_ip"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/socket_connect_setting_server_ip_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:singleLine="true"
+                android:background="@drawable/bg_edit_text" />
+        </LinearLayout>
+        <!--服务器port-->
+        <LinearLayout
+            android:id="@+id/server_port_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/server_ip_rl"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/server_port_tv"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/server_port"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/socket_connect_setting_server_port_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:singleLine="true"
+                android:background="@drawable/bg_edit_text" />
+        </LinearLayout>
+
+        <!--保存-->
+        <Button
+            android:id="@+id/sockect_connect_setting_server_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/server_port_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/connect_btn_style"
+            android:gravity="center"
+            android:text="@string/save_server_settings"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

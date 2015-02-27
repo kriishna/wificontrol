@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--自定义标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" >
+
+        <ImageButton
+            android:id="@+id/socket_connect_setting_select_back_img"
+            android:layout_width="@dimen/title_image_btn_width"
+            android:layout_height="@dimen/title_image_btn_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/bg_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/connect_setting"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <!--插座配置模式（出厂设置/WIFI设置）-->
+    <ListView
+        android:id="@+id/socket_connect_model_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey" />
+    <!--两种模式说明-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/connect_select_tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说明："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/connect_select_tv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect_select_tv01"
+            android:text="@string/select_description"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

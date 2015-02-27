@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wificontrol.lichuang.com.wificontrol.view.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slid="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wifi_connect_sliding"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    slid:rightPadding="180dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <!--左侧滑出菜单-->
+        <include
+            layout="@layout/wifi_connect_left_layout" />
+        <!--右侧wifi连接界面-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <!--自定义标题栏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#ffffff">
+
+                <ImageButton
+                    android:id="@+id/wifi_connect_model_select_img"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/bg_list_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/wifi_config"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/wifi_content_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                android:background="@drawable/wifi_connect_bg"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</wificontrol.lichuang.com.wificontrol.view.SlidingMenu><!-- From: file:/E:/android_studio_project/WifiControl/app/src/main/res/layout/wifi_connect_layout.xml -->

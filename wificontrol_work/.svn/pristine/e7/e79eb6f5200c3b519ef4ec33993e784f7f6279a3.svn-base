@@ -1,0 +1,27 @@
+package wificontrol.lichuang.com.wificontrol.service.runnable;
+
+import android.content.Context;
+
+import wificontrol.lichuang.com.wificontrol.application.SysApplication;
+import wificontrol.lichuang.com.wificontrol.device.ChazuoManager;
+
+/**
+ * Created by Administrator on 2014/12/26.
+ */
+public class UdpHandleMsgRunnable  implements BaseRunnable{
+    private ChazuoManager chazuoManager;
+
+    public UdpHandleMsgRunnable(Context context){
+        chazuoManager = SysApplication.getInstance().getCmInstance();
+    }
+
+    @Override
+    public void GetName() {
+
+    }
+
+    @Override
+    public void run() {
+        chazuoManager.HandleReply();
+    }
+}

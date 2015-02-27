@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WifiControl</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="socket_name">插座名称：</string>
+    <string name="dqydl">当前用电量：</string>
+    <string name="socket_ssgl">瞬时功率：</string>
+    <string name="socket_dl">电流：</string>
+    <string name="socket_dy">电压：</string>
+    <string name="qzsd">锁定状态：</string>
+    <string name="ydl">当前用电量：</string>
+
+    <string name="connect_setting">连接设置</string>
+    <string name="socket_manage">设备</string>
+    <string name="wifi_config">室内控制</string>
+
+
+    <string name="wifi_password_hint">输入WIFI密码</string>
+    <string name="connect">连接</string>
+    <string name="wifi_connect_tv_1">连接WIFI:</string>
+    <string name="wifi_connect_tv_2">以进入手机连接WIFI模式：</string>
+    <string name="wifi_connected_tv"><u>已经连接的WIFI热点:</u></string>
+    <string name="wifi_getanother_tv"><u>连接到其它热点>>></u></string>
+    <string name="wifi_connect_back_tv"><u>返回</u></string>
+
+    <string name="hotspot_name">热点名称：</string>
+    <string name="hotspot_psw">热点密码：</string>
+    <string name="server_ip">服务器地址：</string>
+    <string name="server_port">服务器端口：</string>
+    <string name="save_hotspot_settings">保存热点设置</string>
+    <string name="save_server_settings">保存设置</string>
+
+    <string name="model_select">操作选择</string>
+    <string name="socket_control">设备详情</string>
+
+    <string name="select_description">1.出厂设置用于WIFI设备第一次配置热点名称和远程服务器地址.\n2.WIFI设置用于插座正常工作后需要进行热点名称和远程服务器地址改变.</string>
+
+    <string name="display_pwd">显示密码</string>
+
+</resources>
